@@ -36,11 +36,11 @@ app.get('/', (req, res, next) => {
         title: 'Library'
     });
 });
-const emailuser = "admin@test.com";
-const passworduser = "12345";
+const emaildb = "a@b.com";
+const passworddb = "12345";
 app.post("/login", (req, res, next) => {
     const body = req.body;
-    if (body.email === emailuser && body.password === passworduser) {
+    if (body.email === emaildb && body.password === passworddb) {
         res.render('index', {
             nav,
             title: "Library",
